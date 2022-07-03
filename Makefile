@@ -11,12 +11,11 @@ setupclassroom:
 	git push
 
 # for github codespaces ubuntu with zsh SHELL, need root for sudo
-codespaces_setenv:	
-	sudo apt install autoconf automake autotools-dev curl  gawk build-essential bison flex ninja-build zsh -y
+codespaces_setenv:
 	curl https://sh.rustup.rs -sSf | sh -s -- -y
 	/bin/zsh && source /home/codespace/.cargo/env
 	rustc --version
 
 test:
-	cargo install --force --path .
+#	cargo install --force --path .
 	rustlings verify
