@@ -1,7 +1,7 @@
 {
   "tests": [
     {
-      "name": "run_rustlings",
+      "name": "test_rustlings",
       "setup": "",
       "run": "make test",
       "input": "",
