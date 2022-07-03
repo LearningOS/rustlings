@@ -15,6 +15,13 @@ codespaces_setenv:
 	curl https://sh.rustup.rs -sSf | sh -s -- -y
 	/bin/zsh && source /home/codespace/.cargo/env
 	rustc --version
+	cargo install --force --path .
+
+ubuntu_local_setenv:
+	curl https://sh.rustup.rs -sSf | sh -s -- -y
+	/bin/bash && source /home/codespace/.cargo/env
+	rustc --version
+	cargo install --force --path .
 
 test:
 #	cargo install --force --path .
