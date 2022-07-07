@@ -1,20 +1,21 @@
 // errors2.rs
-// Say we're writing a game where you can buy items with tokens. All items cost
+// Say we're writing a game where you can buy items with tokens. Each item cost
 // 5 tokens, and whenever you purchase items there is a processing fee of 1
 // token. A player of the game will type in how many items they want to buy,
-// and the `total_cost` function will calculate the total number of tokens.
+// and the `total_cost` function will calculate the total number of tokens needed.
 // Since the player typed in the quantity, though, we get it as a string-- and
-// they might have typed anything, not just numbers!
+// they might have typed anything instead of digits!
 
-// Right now, this function isn't handling the error case at all (and isn't
+// Currently, this function isn't handling the error case at all (and isn't
 // handling the success case properly either). What we want to do is:
-// if we call the `parse` function on a string that is not a number, that
-// function will return a `ParseIntError`, and in that case, we want to
-// immediately return that error from our function and not try to multiply
+// if we call the `parse` function on the input string that is not a digit, 
+// that function will return a `ParseIntError`, and in that case, we want to
+// return that error immediately from our function and stop to try to multiply
 // and add.
 
 // There are at least two ways to implement this that are both correct-- but
-// one is a lot shorter! Execute `rustlings hint errors2` for hints to both ways.
+// one of tehm is a lot shorter! 
+// Execute `rustlings hint errors2` for hints to both ways.
 
 // I AM NOT DONE
 
